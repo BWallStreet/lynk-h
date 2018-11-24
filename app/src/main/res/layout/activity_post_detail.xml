@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/post_top_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/user_pic"
+            android:layout_width="15dp"
+            android:layout_height="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/post_photo"
+            android:layout_marginStart="15dp"
+            android:drawableLeft="@drawable/ic_acc"
+            app:layout_constraintBottom_toTopOf="@+id/post_timestamp"
+            app:layout_constraintEnd_toStartOf="@+id/username"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/post_username"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/user_pic"
+            android:layout_marginStart="50dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/post_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="47dp"
+            android:text="Post Content"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/post_timestamp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            app:layout_constraintVertical_bias="0.098" />
+
+        <ImageView
+            android:id="@+id/post_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/post_content"
+            android:layout_centerVertical="true"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/post_timestamp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_content"
+            app:layout_constraintVertical_bias="0.68" />
+
+        <TextView
+            android:id="@+id/post_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-8dp"
+            android:layout_marginTop="97dp"
+            android:layout_toEndOf="@+id/user_pic"
+            android:text="Time Posted"
+            android:textColor="@color/darkGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabShowCommentDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/post_top_card"
+        android:background="@color/colorAccent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-28dp"
+        app:srcCompat="@drawable/ic_float_add" />
+
+<!--Comments-->
+    <android.support.v7.widget.RecyclerView
+android:id="@+id/recyclerComments"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/post_top_card"
+android:background="@color/colorPrimaryDark"
+android:clipToPadding="false"
+android:paddingBottom="16dp"
+android:paddingTop="28dp"
+android:visibility="gone"
+tools:listitem="@layout/list_item_comment"/>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    >
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/post_photo"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/darkGray"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/post_camera"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_content" />
+
+        <ImageButton
+            android:id="@+id/post_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/darkGray"
+            android:src="@android:drawable/ic_menu_camera"
+            app:layout_constraintEnd_toStartOf="@+id/submit_post"
+            app:layout_constraintTop_toBottomOf="@+id/post_content" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="@string/create_post"
+            android:textColor="@color/darkGray"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/post_content"
+            app:layout_constraintStart_toStartOf="@+id/post_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/post_content"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:hint="@string/post_content_hint"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <Button
+            android:id="@+id/submit_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            android:text="@string/submit_post"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.887"
+            app:layout_constraintStart_toStartOf="@+id/post_content"
+            app:layout_constraintTop_toBottomOf="@+id/post_content" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/submit_post"-->
+        <!--app:layout_constraintHorizontal_bias="0.178"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/post_content"-->
+        <!--app:layout_constraintVertical_bias="0.083" />-->
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

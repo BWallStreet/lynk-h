@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1056476304546",
+    "firebase_url": "https://lynk-2f86b.firebaseio.com",
+    "project_id": "lynk-2f86b",
+    "storage_bucket": "lynk-2f86b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056476304546:android:8b0ae1d5bac00de5",
+        "android_client_info": {
+          "package_name": "com.bitanga.android.lynkactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056476304546-tg5n2dl2c1k7j3foa6h7nsuuiqhn1qjq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bitanga.android.lynkactivity",
+            "certificate_hash": "4bf72398bedc28f09ea7c7c6ee271cfb646c242c"
+          }
+        },
+        {
+          "client_id": "1056476304546-8k218uf767b7d5k9fhjs4ngj5dtmjl09.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bitanga.android.lynkactivity",
+            "certificate_hash": "9b49b85275be5454a80d3cb8f945ac66dc059861"
+          }
+        },
+        {
+          "client_id": "1056476304546-oimbdfobue4mvfhm7bdnebn2o8p723sk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvRgvJluGUCiW0Pc7Gj9Zw_Ox6W95SR9g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056476304546-oimbdfobue4mvfhm7bdnebn2o8p723sk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

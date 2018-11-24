@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <!--just add floating action button here from app_bar_nav-->
+    <!--f include app_bar_nav, there's an error-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/colorPrimary" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:openDrawer="start" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/app_bar_nav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/activity_nav_drawer"
+            android:background="#555555"
+            app:itemIconTint="@color/colorPrimaryDark"/>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>
+
+<!--<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/drawer_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".MainActivity">-->
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--<fragment-->
+        <!--android:id="@+id/navigation_drawer"-->
+        <!--android:layout_width="240dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:name="com.bitanga.android.lynkactivity.NavigationDrawerFragment"-->
+        <!--android:layout="@layout/fragment_nav" />-->
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/view_pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+<!--</android.support.v4.widget.DrawerLayout>-->

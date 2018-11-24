@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">LynkActivity</string>
+    <string name="title_activity_nav">Lynk</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="lancer_mail">Lancer Mail</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="user">User</string>
+    <string name="post_title_label">Post</string>
+    <string name="post_content_label">Post Content</string>
+    <string name="post_content_hint">Write post here.</string>
+    <string name="delete_post">Delete post</string>
+    <string name="create_post">Create a post!</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle_format">%1$d posts</string>
+    <string name="submit_post">Submit post</string>
+    <string name="add_pic">Add photo</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="gps">Enable GPS</string>
+    <string name="message_no_results">No posts yet!</string>
+    <string name="divider_bullet">•</string>
+    <string name="private_chat">Private Chat</string>
+    <string name="add_comment">Add comment</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit_comment">Submit Comment</string>
+    <string name="choose_username">Enter Username</string>
+    <string name="new_password">Enter Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="cbu_email_only">Enter CBU email</string>
+    <string name="create_lynk_account">Create your Lynk account</string>
+    <string name="register">Register!</string>
+    <string name="most_lynked_posts">Most Lynked Posts</string>
+    <string name="friend_list">Friend List</string>
+</resources>
